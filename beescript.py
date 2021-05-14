@@ -39,7 +39,7 @@ def pop(index = -1):
 while pc >= 0 and pc < len(lines):
 	parts = lines[pc].split(" ")
 	instr = parts[0]
-	if instr == "PUSH":
+	if instr == "AVIATE":
 		index = 0
 
 		if len(parts) < 2:
@@ -56,7 +56,7 @@ while pc >= 0 and pc < len(lines):
 		a = pop()
 		stack.append(a)
 		stack.append(a)
-	elif instr == "AVIATE":
+	elif instr == "BLACK":
 		print(chr(pop()), end="", flush=True)
 	elif instr == "BARRY":
 		a = pop()
